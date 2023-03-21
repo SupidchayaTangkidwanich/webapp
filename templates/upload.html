@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Application for car part prediction and damage estimation with single image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/upload.css') }}">
+  </head>
+  
+  <h1>
+    <center>     <br>    <br> 
+    Web Application for car part prediction and damage estimation with single image
+      </br> </br></center> 
+  </h1>
+
+
+  <body>
+  <div class= "zone">
+    <br> 
+    <h1>Image Upload</h1>   
+
+  <div id="dropZ">
+<img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" height="180"/>
+<br></br>
+
+
+<form action="/upload" method="post" enctype="multipart/form-data" >
+    </div>
+      <div class = "selectFile">
+      <input type="file" name="image" accept=".jpg, .jpeg">
+
+      <input type="submit" value="Upload">
+    </form>
+  </body>
+</div>
+</div>
+  
+</html>
