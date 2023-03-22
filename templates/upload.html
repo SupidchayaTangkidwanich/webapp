@@ -5,14 +5,121 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='CSS/upload.css') }}">
   </head>
   
-  <h1>
-    <center>     <br>    <br> 
-    Web Application for car part prediction and damage estimation with single image
-      </br> </br></center> 
-  </h1>
+  
+
+  <style>
+    h2{
+      font-size: 25px;
+    }
+  
+    .p1 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 180%;
+      font-weight: 100;
+      
+    }
+    .p2 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 120%;
+      font-weight: 100;
+      font-style: italic;
+    }
+    .p3{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 50%;
+      font-weight: 100;
+      font-style: italic;
+    }
+    .footer {
+    background-color: #7ab0f8;
+    padding: 2px;
+    text-align: center;
+  }
+  
+  div2 {
+    background-color: rgb(232, 235, 235);
+    width: 2px;
+    border: 5px solid rgb(209, 208, 208);
+    padding: 5px;
+    margin: 2px;
+    opacity:inherit;
+  }
+  </style>
+  
+  
+    <body >
+    <div2 class= "zone">
+  
+          <h1>------------------------------------------------------------------------------------------------ </h1>
+  
+      <p class="p1" >🚘 เว็บแอปพลิเคชันสำหรับทำนายชิ้นส่วนรถยนต์และระดับความเสียหายด้วยภาพถ่ายเพียงภาพเดียว 🚘  </p>
+      
+  
+      <p class="p1" >🚓 (Web Application for car part prediction and damage estimation with single image) 🚓 </p>
+  
+      <h1>------------------------------------------------------------------------------------------------ </h1>
+      <p class="p1"> 🚗 อัพโหลดรูปภาพ 🚗</p>
 
 
-  <body>
+      <!-- <div id="dropZ">
+    <br></br>
+<img src="https://100dayscss.com/codepen/upload.svg" class="upload-icon" height="190"/>
+<br></br>
+
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    </div>
+      <div class = "selectFile">
+      <input type="file" name="image" accept=".jpg, .jpeg">
+
+      <button type="submit" class="pull-right btn btn-primary"> ยืนยัน </button> -->
+      
+
+      <head>
+        <script src="https://kit.fontawesome.com/5cdb7dd919.js" crossorigin="anonymous"></script>
+      </head>
+      <form action="/upload" method="post" enctype="multipart/form-data"></form>
+      
+          
+           
+          <div id="dropZ">
+            <br></br>
+            <img src="https://100dayscss.com/codepen/upload.svg" class="upload-icon" height="230" />
+            <br></br>
+            
+<form action="/upload" method="post" enctype="multipart/form-data">
+    </div>
+          <div class = "selectFile">
+          <div class="barra" id="barra">
+          <div class="header">
+              <p class="p1"> 📌 อัพโหลด 📌 </p>
+          </div>
+
+                <div2 class="conteiner">
+                <i class="fa-solid fa-cloud-arrow-up upload"></i>
+                <!-- <span class="nombre_archivo"></span>
+                <div class="center"></div> -->
+
+                <input type="file" name="image" accept=".jpg, .jpeg">
+                       
+              </div2>
+              <br></br> 
+            </div>
+            <button type="submit" class="pull-right btn btn-primary"> อัพโหลด </button> 
+            <!-- <i class="fa-solid fa-hourglass syncing"></i>
+            <i class="fa-solid fa-circle-check done" ></i> -->
+            
+              <p class="p1">Thank you</p>
+            </div>
+            </body>
+          </div>
+        </div>
+      </div>
+
+
+
+  <!-- <body>
+    
   <div class= "zone">
     <br> 
     <h1>Image Upload</h1>   
@@ -33,4 +140,4 @@
 </div>
 </div>
   
-</html>
+</html> -->

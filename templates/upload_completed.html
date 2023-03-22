@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <title>Web Application for car part prediction and damage estimation with single image</title>
   </head>
   <link rel="stylesheet" href="{{ url_for('static', filename='CSS/upload_completed.css') }}">
@@ -8,10 +9,12 @@
 
   <div class= "zone">
   <body>
-    <h1>Output</h1>
-    <img src={{ url_for('static', filename='p01.jpg')}} height="250" alt="processed image">
-    <h2> Part   :  {{prediction1}}  </h2>
-    <h2> Degree   :  {{prediction2}} </h2> 
+    <br></br>
+    <h1> 🚗 ผลลัพธ์การทำนายชิ้นส่วนรถยนต์และระดับความเสียหาย คือ 🚗 </h1>
+    <br></br>
+    <img src={{ url_for('static', filename='p01.jpg')}} height="300" alt="processed image">
+    <h2> ชิ้นส่วนที่ได้รับความเสียหายคือ   :  {{prediction1}}  </h2>
+    <h2> ระดับความเสียหาย   :  {{prediction2}} </h2> 
 
   </body>
   </div>

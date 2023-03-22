@@ -10,13 +10,13 @@ body {
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background: radial-gradient(ellipse at center,#03989E 0,#03989E 100%);
-  width:50%;
-  height:50%;  
-  border:5px dashed white;
+  background: radial-gradient(ellipse at center,#fbfbfb 0,#46bae1 250%);
+  width:70%;
+  height:100%;  
+  border:0px dashed rgb(12, 12, 12);
   text-align:center;
-  color: white;
-  z-index: 20;
+  color: rgb(1, 0, 0);
+  z-index: 0;
   transition: all 0.3s ease-out;
   box-shadow: 0 0 0 1px rgba(255,255,255,.05),inset 0 0 .25em 0 rgba(0,0,0,.25);
   
@@ -26,13 +26,13 @@ body {
     } 
     .active {
       background: #03989E;
-      color:white;
+      color:rgb(0, 0, 0);
     }
   }
   i {
     text-align: center;
     font-size: 10em;  
-    color:#fff;
+    color:#000000;
     margin-top: 50px;
   }
   .selectFile {
