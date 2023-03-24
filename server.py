@@ -7,8 +7,8 @@ from tensorflow.keras.applications.efficientnet import preprocess_input
 
 app = Flask(__name__)
 
-Part = {0: 'p01',1: 'p02',2: 'p03',3:'p04',4:'p05',5:'p06',6:'p07',7:'p08',8:'p09',9:'p10',10:'p11',11:'p12',12:'p13',13:'p14',14:'p15'}
-Damage = {0: 'Base',1:'Minor',2:'Moderate',3:'Severe'}
+Part = {0: 'กันชนหน้า-ฝากระโปรงหน้า',1: 'กันชนหน้า-ฝากระโปรงหน้า',2: 'บังโคลนหน้า ซ้าย',3:'บังโคลนหน้า ขวา',4:'ประตูหน้า ซ้าย',5:'ประตูหน้า ขวา',6:'กระจกมองข้าง ซ้าย',7:'กระจกมองข้าง ขวา',8:'ประตูหลัง ซ้าย',9:'ประตูหลัง ขวา',10:'บังโคลนหลัง ซ้าย',11:'บังโคลนหลัง ขวา',12:'กันชนหลัง-ฝากระโปรงหลัง',13:'กันชนหลัง-ฝากระโปรงหลัง',14:'หลังคา'}
+Damage = {0: 'ไม่มีระดับความเสียหาย',1:'ระดับความเสียหายเล็กน้อย',2:'ระดับความเสียหายปานกลาง',3:'ระดับความเสียหายปานกลาง'}
 
 import sys
 sys.path.append('/home/umaporn/codes/webapp-/templates/Part.h5')
@@ -69,6 +69,7 @@ def predict_image1(img_path):
     x = x.reshape((1,) + x.shape) 
     x /= 255.
     result = model1.predict(x)
+    
     return Part[result.argmax()]
 
 def predict_image2(img_path):
@@ -92,6 +93,7 @@ def upload():
         # Read the uploaded image and save it to a temporary file
         file = request.files['image']
         img_path = 'static/p01.jpg'
+
         file.save(img_path)
   
         # Predict the age
