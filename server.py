@@ -11,8 +11,8 @@ Part = {0: 'กันชนหน้า-ฝากระโปรงหน้า'
 Damage = {0: 'ไม่มีระดับความเสียหาย',1:'ระดับความเสียหายเล็กน้อย',2:'ระดับความเสียหายปานกลาง',3:'ระดับความเสียหายปานกลาง'}
 
 import sys
-sys.path.append('/home/umaporn/codes/webapp-/templates/Part.h5')
-sys.path.append('/home/umaporn/codes/webapp-/templates/damage.h5')
+sys.path.append('/home/supidchaya/webapp/templates/Part.h5')
+sys.path.append('/home/supidchaya/webapp/templates/damage.h5')
 
 from efficientnet.layers import Swish, DropConnect
 from efficientnet.model import ConvKernalInitializer
@@ -24,7 +24,7 @@ get_custom_objects().update({
     'DropConnect':DropConnect
 })
 
-model1 = tf.keras.models.load_model('/home/umaporn/codes/webapp/templates/Part.h5')
+model1 = tf.keras.models.load_model('/home/supidchaya/webapp/templates/Part.h5')
 
 model1.make_predict_function()
 
@@ -39,7 +39,7 @@ get_custom_objects().update({
     'Swish': Swish,
     'DropConnect':DropConnect
 })
-model2 = tf.keras.models.load_model('/home/umaporn/codes/webapp/templates/damage.h5')
+model2 = tf.keras.models.load_model('/home/supidchaya/webapp/templates/damage.h5')
 
 model2.make_predict_function()
 
